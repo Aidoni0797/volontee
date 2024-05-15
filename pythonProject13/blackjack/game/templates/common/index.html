@@ -1,0 +1,524 @@
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Volunteer-club</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Волонтерский клуб
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html" style="display:none;">Главная<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="display:none;">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html" style="display:none;">Программы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="display:none;">Связаться с нами</a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <a href="{% url 'game:setting' %}"class="quote_btn" id="myBtn">
+                Настройка
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Волонтерский клуб Университета Шакарима
+                    </h1>
+                    <p>
+                      Волонтерские клубы играют важную роль в сообществах, предоставляя возможности для людей вносить свой вклад в общество и оказывать положительное влияние на жизнь других.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Организация работы волонтеров
+        </h2>
+        <p>
+          Мы считаем практический опыт самым эффективным инструментом личностного рота. <br>На этом принципе построена наша программа
+          "Организация работы волонтеров".
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/s1.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+
+              </h5>
+              <p>
+                Волонтерская программа мотивирует участников виходить в мир, исследовать и радоваться жизни.
+              </p>
+              <a href="">
+                <span>
+
+                </span>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/s2.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+
+              </h5>
+              <p>
+                Наши программы рассчитаны на участников с разным образованием, культурой, опытом и уровнем подготовки.
+              </p>
+              <a href="">
+                <span>
+
+                </span>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/s3.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+
+              </h5>
+              <p>
+                Представляя собой своего рода платформу для взаимодействия обучения и развития.
+              </p>
+              <a href="">
+                <span>
+
+                </span>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/s4.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+
+              </h5>
+              <p>
+                Исследования показали, что волонтерство может снизить стресс, способствовать здоровому образу жизни.
+              </p>
+              <a href="">
+                <span>
+
+                </span>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                О волонтерстве
+              </h2>
+            </div>
+            <p>
+               Волонтерство может предоставить возможности для развития новых навыков, таких как общение, работа в команде и лидерство.
+               Волонтеры могут взаимодействовать с людьми из разных слоев общества и заводить новых друзей.Волонтеры могут оказать реальное влияние на жизнь других и сделать свое сообщество лучшим местом для жизни.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png' %}" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- case section -->
+
+  <section class="case_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Волонтерские работы
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/case-1.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Профессиональная помощь
+              </h5>
+              <p>
+                Это лишь некоторые примеры многочисленных волонтерских работ, доступных в сообществах по всему миру.
+              </p>
+              <a href="">
+                <span>
+
+                </span>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/case-2.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Неоплачиваемая деятельность
+              </h5>
+              <p>
+                Волонтерство — это отличный способ внести свой вклад в общество, развить новые навыки, улучшить свое общее благополучие.
+              </p>
+              <a href="">
+                <span>
+
+                </span>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end case section -->
+
+  <!-- client section -->
+  <section class="client_section ">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Часто задаваемые вопросы
+        </h2>
+      </div>
+    </div>
+    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+
+                        </h5>
+                        <h6>
+
+                        </h6>
+                      </div>
+
+                    </div>
+                    <p>
+                      У вас есть о том, что представляет собой наша Волонтерская программа? Рекомендуем ознакомится с ответами на
+                      часто задаваемые вопросы. Напишите или позвоните нам, если вы хотите узнать больше.<br>Мы всегда готовы помощь.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+
+                        </h5>
+                        <h6>
+
+                        </h6>
+                      </div>
+                    </div>
+                    <p>
+                      Конечно, волонтерские программы могут быть разнообразными и включать в себя различные аспекты. Вот некоторые общие вопросы, которые могут быть полезны при разработке волонтерской программы или анкеты для потенциальных волонтеров
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+
+                        </h5>
+                        <h6>
+
+                        </h6>
+                      </div>
+                    </div>
+                    <p>
+                      Эти вопросы помогут организаторам программы лучше понять потребности, интересы и ожидания потенциальных волонтеров, что в свою очередь позволит создать более эффективную и удовлетворительную волонтерскую программу.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#customCarousel2" data-slide-to="1"></li>
+        <li data-target="#customCarousel2" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </section>
+  <!-- end client section -->
+
+
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="form_container">
+            <div class="heading_container">
+              <h2>
+                Свяжитесь с нами
+              </h2>
+            </div>
+            <form action="{% url 'game:contact' %}" method="post">
+              {% csrf_token %}
+                {{ form.as_p }}
+              <input type="submit" value="ОТПРАВИТЬ" class="btn btn-danger">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <div class="footer_container">
+    <!-- info section -->
+
+    <section class="info_section ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 ">
+            <div class="info_detail">
+              <h4>
+                Волонтерский клуб
+              </h4>
+              <p>
+                Волонтерские клубы играют важную роль в сообществах, предоставляя возможности для людей вносить свой вклад в общество и оказывать положительное влияние на жизнь других.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-0 ml-auto">
+            <div class="info_contact">
+              <h4>
+                Адрес
+              </h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <span>
+                    Область Абай, город Семей,
+                    Университет Шакарима, <br>ул. Глинки 20а
+                  </span>
+                </a>
+                <a href="">
+                  <span>
+                    Телефон +7 777-777-77-77
+                  </span>
+                </a>
+                <a href="">
+                  <span>
+                    volonteer@club.com
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="">
+              </a>
+              <a href="">
+
+              </a>
+              <a href="">
+
+              </a>
+              <a href="">
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+  </div>
+
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
